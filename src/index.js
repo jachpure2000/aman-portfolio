@@ -16,12 +16,27 @@
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
 
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+
+
+// import App from './App';
+// import './index.css';
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(<App />);
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-
 import App from './App';
+import { HashRouter } from 'react-router-dom'; // Use HashRouter instead of BrowserRouter
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+root.render(
+  <React.StrictMode>
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </React.StrictMode>
+);

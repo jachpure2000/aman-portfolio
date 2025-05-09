@@ -9,12 +9,13 @@ const Projects = () => {
         <div className="project-card">
           <h3>E-Commerce App</h3>
           <p>Java + Spring Boot based shopping platform with cart, payment, and admin panel.</p>
-          <a href="https://github.com/yourusername/ecommerce-app" target="_blank" rel="noreferrer">View Code</a>
+          <a href="https://github.com/jachpure2000/ecommerce-app" target="_blank" rel="noreferrer">View Code</a>
+
         </div>
         <div className="project-card">
           <h3>Portfolio Website</h3>
           <p>This very portfolio website built using React and CSS!</p>
-          <a href="https://github.com/yourusername/portfolio" target="_blank" rel="noreferrer">View Code</a>
+          <a href="https://github.com/jachpure2000/aman-portfolio" target="_blank" rel="noreferrer">View Code</a>
         </div>
       </div>
     </section>

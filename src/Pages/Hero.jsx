@@ -10,7 +10,7 @@ const Hero = () => {
         <p>I build robust backend systems using Java, Spring Boot & Hibernate.</p>
         <div className="hero-buttons">
           <a href="#contact" className="btn">Contact Me</a>
-          <a href="/AmanJachpureResume.pdf" className="btn btn-outline" download>Download CV</a>
+          <a href="/AmanNewJachpure.pdf" className="btn btn-outline" download>Download CV</a>
         </div>
       </div>
     </section>
