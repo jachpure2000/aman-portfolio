@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/jachpure2000/aman-portfolio.git/static/css/main.e2541b27.css",
-    "main.js": "/jachpure2000/aman-portfolio.git/static/js/main.413f3114.js",
-    "index.html": "/jachpure2000/aman-portfolio.git/index.html",
-    "main.e2541b27.css.map": "/jachpure2000/aman-portfolio.git/static/css/main.e2541b27.css.map",
-    "main.413f3114.js.map": "/jachpure2000/aman-portfolio.git/static/js/main.413f3114.js.map"
+    "main.css": "/aman-portfolio/static/css/main.e2541b27.css",
+    "main.js": "/aman-portfolio/static/js/main.118ae2b2.js",
+    "index.html": "/aman-portfolio/index.html",
+    "main.e2541b27.css.map": "/aman-portfolio/static/css/main.e2541b27.css.map",
+    "main.118ae2b2.js.map": "/aman-portfolio/static/js/main.118ae2b2.js.map"
   },
   "entrypoints": [
     "static/css/main.e2541b27.css",
-    "static/js/main.413f3114.js"
+    "static/js/main.118ae2b2.js"
   ]
 }
