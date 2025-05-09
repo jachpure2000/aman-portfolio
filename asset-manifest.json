@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jachpure2000/aman-portfolio.git/static/css/main.e2541b27.css",
+    "main.js": "/jachpure2000/aman-portfolio.git/static/js/main.5c2a2aa0.js",
+    "index.html": "/jachpure2000/aman-portfolio.git/index.html",
+    "main.e2541b27.css.map": "/jachpure2000/aman-portfolio.git/static/css/main.e2541b27.css.map",
+    "main.5c2a2aa0.js.map": "/jachpure2000/aman-portfolio.git/static/js/main.5c2a2aa0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2541b27.css",
+    "static/js/main.5c2a2aa0.js"
+  ]
+}
