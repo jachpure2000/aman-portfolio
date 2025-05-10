@@ -4,8 +4,7 @@ const About = () => (
     <section id="about" >
     <div className="fade-in">
       <h2>About Me</h2>
-      <p>I’m Aman Jachpure, a Java Backend Developer with experience in Spring Boot, REST APIs, and system design.</p>
-        <p>I have a passion for building scalable and efficient backend systems, and I’m always eager to learn new technologies.</p>
+      <p>I’m Aman Jachpure, a Java Backend Developer with experience in Spring Boot, REST APIs, and system design. I have a passion for building scalable and efficient backend systems, and I’m always eager to learn new technologies.</p>
         </div>
         <div className="about-content">
           <h3>Skills</h3>

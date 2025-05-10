@@ -18,7 +18,8 @@
   /* About.css */
 #about {
   padding: 4rem 2rem;
-  max-width: 1200px;
+  min-height: 100vh;
+  width: 100%;
   margin: 0 auto;
   background-color: #f9f9f9;
   color: #333;
@@ -207,6 +208,6 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #000000; /* fallback */
+    background-color: #00231f; /* fallback */
     font-family: 'Segoe UI', sans-serif;
   }

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 20px 40px;
-    background-color: #222;
+    background-color: #000000;
     color: white;
   }
   
@@ -16,9 +16,71 @@
     display: flex;
     gap: 20px;
   }
-  
+  * {
+    font-family: 'Poppins', sans-serif;
+  } 
+  h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
   .nav-links a {
     color: white;
     text-decoration: none;
     font-size: 18px;
   }
+    .nav-links a:hover {
+        text-decoration: underline;
+    }
+    .nav-links a.active {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+    @media (max-width: 768px) {
+        .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #002631;
+        width: 100%;
+        padding: 20px;
+        }
+    
+        .nav-links.active {
+        display: flex;
+        }
+    
+        .hamburger {
+        display: flex;
+        }
+    
+        .hamburger.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+        }
+    
+        .hamburger.active div:nth-child(2) {
+        opacity: 0;
+        }
+    
+        .hamburger.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+        }
+    }
