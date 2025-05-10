@@ -1,86 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap');
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
-    background-color: #000000;
-    color: white;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  * {
-    font-family: 'Poppins', sans-serif;
-  } 
-  h1 {
-  font-weight: 700;
-  font-size: 3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  padding: 1rem 2rem;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-p {
-  font-weight: 400;
-  font-size: 1.1rem;
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
 }
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-    .nav-links a:hover {
-        text-decoration: underline;
-    }
-    .nav-links a.active {
-        font-weight: bold;
-        text-decoration: underline;
-    }
-  .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-  }
-  .hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
-    transition: 0.4s;
-  }
-    @media (max-width: 768px) {
-        .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #002631;
-        width: 100%;
-        padding: 20px;
-        }
-    
-        .nav-links.active {
-        display: flex;
-        }
-    
-        .hamburger {
-        display: flex;
-        }
-    
-        .hamburger.active div:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-        }
-    
-        .hamburger.active div:nth-child(2) {
-        opacity: 0;
-        }
-    
-        .hamburger.active div:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-        }
-    }
+
+
+.logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.logo span {
+  color: #00c6ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background-color: #00c6ff;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #00c6ff;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
