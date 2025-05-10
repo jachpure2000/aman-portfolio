@@ -1,35 +1,27 @@
-
-// import React from 'react';
-// import './Navbar.css';
-
-// const Navbar = () => {
-//   return (
-//     <nav className="navbar">
-//       <h1 className="logo">Portfolio</h1>
-//       <ul className="nav-links">
-//         <li><a href="#about">About</a></li>
-//         <li><a href="#projects">Projects</a></li>
-//         <li><a href="#contact">Contact</a></li>
-//       </ul>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <nav className="navbar">
-      <div className="navbar-container">
-        <h1 className="logo">Aman<span>Jachpure</span></h1>
-        <ul className="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <h1 className="logo">Aman<span>Jachpure</span></h1>
+
+      {/* Hamburger icon */}
+      <div className="hamburger" onClick={toggleMenu}>
+        ☰
       </div>
+
+      {/* Navigation Links */}
+      <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
+        <li><a href="#about" onClick={closeMenu}>About</a></li>
+        <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
+        <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+      </ul>
     </nav>
   );
 };
